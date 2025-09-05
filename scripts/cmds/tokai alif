@@ -1,0 +1,25 @@
+? Cmd install tokaialif.js module.exports = {
+  config: {
+    name: "tokaialif",
+    version: "1.0",
+    author: "Goku",
+    countDown: 5,
+    role: 0,
+    shortDescription: "triggered by tokai alif",
+    longDescription: "sends Fahad video when tokai alif name is sent",
+    category: "no prefix",
+  }, 
+
+  onStart: async function(){}, 
+
+  onChat: async function({ event, message }) {
+    if (event.body && event.body.includes("tokai alif")) {
+      const video = "https://files.catbox.moe/kug4fb.mp4";
+
+      return message.reply({
+        body: " JIBON ER POLA💫TOKAI ALIF💋🎬",
+        attachment: await global.utils.getStreamFromURL(video)
+      });
+    }
+  }
+}
