@@ -1,4 +1,4 @@
-? Cmd install tokaialif.js module.exports = {
+module = {
   config: {
     name: "tokaialif",
     version: "1.0",
