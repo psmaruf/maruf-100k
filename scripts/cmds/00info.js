@@ -23,15 +23,23 @@ module.exports = {
 
   onStart: async function ({ api, event }) {
     try {
-      // Download image from Google Drive (direct download link)
-      const fileId = "";
-      const fileUrl = ``;
-      const imgPath = path.join(__dirname, "botinfo.jpg");
+ 
+      const originalAuthor = "BADHON";
+      const configPath = path.join(__dirname, '..', '..', 'scripts', 'cmds', this.config.name + '.js');
+      const configContent = fs.readFileSync(configPath, 'utf8');
+      
+      if (!configContent.includes(`author: "${originalAuthor}"`) && 
+          !configContent.includes(`author: '${originalAuthor}'`)) {
+        api.sendMessage("⚠️ Author name change detected! This command has been disabled.", event.threadID);
+        return;
+      }
 
-      const response = await axios.get(fileUrl, { responseType: "arraybuffer" });
-      fs.writeFileSync(imgPath, Buffer.from(response.data, "binary"));
+      const videoUrl = "https://files.catbox.moe/fsfqcx.mp4";
+      const videoPath = path.join(__dirname, "botinfo.mp4");
 
-      // Get thread info
+      const response = await axios.get(videoUrl, { responseType: "arraybuffer" });
+      fs.writeFileSync(videoPath, Buffer.from(response.data, "binary"));
+
       const threadInfo = await api.getThreadInfo(event.threadID);
       const threadMem = threadInfo.participantIDs.length;
       const messageCount = threadInfo.messageCount || 0;
@@ -39,14 +47,12 @@ module.exports = {
       const threadID = threadInfo.threadID;
       const adminIDs = threadInfo.adminIDs || [];
 
-      // Count gender
       let maleCount = 0, femaleCount = 0;
       for (const user of threadInfo.userInfo) {
         if (user.gender === "MALE") maleCount++;
         else if (user.gender === "FEMALE") femaleCount++;
       }
 
-      // Fetch admin names concurrently
       let adminNames = "";
       if (adminIDs.length > 0) {
         const adminInfo = await api.getUserInfo(adminIDs.map(a => a.id));
@@ -56,19 +62,16 @@ module.exports = {
         }
       }
 
-      // Bot uptime
       const uptime = process.uptime();
       const hours = Math.floor(uptime / 3600);
       const minutes = Math.floor((uptime % 3600) / 60);
       const seconds = Math.floor(uptime % 60);
       const uptimeString = `${hours}Hrs ${minutes}min ${seconds}sec`;
 
-      // Ping
       const timeStart = Date.now();
       await api.sendMessage("𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴 𝗕𝗼𝘁'𝘀 𝗜𝗻𝗳𝗼...", event.threadID);
       const ping = Date.now() - timeStart;
 
-      // Info message
       const message = `╭───── 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢 ─────⭓
 ├─「𝐔𝐏𝐓𝐈𝐌𝐄」
 │» ${uptimeString}
@@ -83,15 +86,14 @@ module.exports = {
 │» Messages: ${messageCount}
 ╰────────────────────⭓`;
 
-      // Send message with image attachment
       api.sendMessage(
         {
           body: message,
-          attachment: fs.createReadStream(imgPath)
+          attachment: fs.createReadStream(videoPath)
         },
         event.threadID,
         () => {
-          if (fs.existsSync(imgPath)) fs.unlinkSync(imgPath);
+          if (fs.existsSync(videoPath)) fs.unlinkSync(videoPath);
         }
       );
 
