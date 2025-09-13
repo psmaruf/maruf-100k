@@ -161,7 +161,7 @@ module.exports.onChat = async ({
         const body = event.body ? event.body?.toLowerCase() : ""
         if (body.startsWith("baby") || body.startsWith("bby") || body.startsWith("বেবি") || body.startsWith("bot") || body.startsWith("jibon") || body.startsWith("maruf") || body.startsWith("বট")) {
             const arr = body.replace(/^\S+\s*/, "")
-            const randomReplies = ["Maruf", "𝙃𝙤𝙥 𝙗𝙚𝙙𝙖😾, 𝘽𝙤𝙨𝙨 বল 𝙗𝙤𝙨𝙨😼", "𝙒𝙝𝙖𝙩'𝙨 𝙪𝙥?", "বলো কি বলবা, সবার সামনে বলবা নাকি?🤭🤏", "𝙣𝙖𝙬 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙙𝙖𝙬 https://www.facebook.com/ps.maruf.gaming.1", "আমাকে ডাকলে, আমি কিন্তূ কিস করে দেবো😘", "𝘽𝘼𝘽𝙐 𝙆𝙃𝙐𝘿𝘼 𝙇𝘼𝙂𝙎𝙀🥺"];
+            const randomReplies = ["😘", "𝙃𝙤𝙥 𝙗𝙚𝙙𝙖😾, 𝘽𝙤𝙨𝙨 বল 𝙗𝙤𝙨𝙨😼", "𝙒𝙝𝙖𝙩'𝙨 𝙪𝙥?", "বলো কি বলবা, সবার সামনে বলবা নাকি?🤭🤏", "𝙣𝙖𝙬 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙙𝙖𝙬 https://www.facebook.com/ps.maruf.gaming.1", "আমাকে ডাকলে, আমি কিন্তূ কিস করে দেবো😘", "𝘽𝘼𝘽𝙐 𝙆𝙃𝙐𝘿𝘼 𝙇𝘼𝙂𝙎𝙀🥺"];
             if (!arr) {
 
                 await api.sendMessage(randomReplies[Math.floor(Math.random() * randomReplies.length)], event.threadID, (error, info) => {
