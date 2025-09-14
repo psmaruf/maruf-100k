@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    name: "jibonrx",
+    name: "emvid2",
     version: "1.0",
     author: "Goku",
     countDown: 5,
@@ -17,7 +17,7 @@ module.exports = {
       const video = "https://files.catbox.moe/1ffh5y.mp4";
 
       return message.reply({
-        body: " 𝐉𝐈𝐁𝐎𝐍 𝐏𝐑𝐄𝐌𝐈𝐔𝐌💫𝐓𝐇𝐈𝐒 𝐐𝐔𝐀𝐋𝐈𝐓𝐘🎬",
+        body: " PS MARUF GAMING🎬",
         attachment: await global.utils.getStreamFromURL(video)
       });
     }
