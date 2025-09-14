@@ -1,6 +1,6 @@
 module = {
   config: {
-    name: "tokaialif",
+    name: "emvid4",
     version: "1.0",
     author: "Goku",
     countDown: 5,
@@ -17,7 +17,7 @@ module = {
       const video = "https://files.catbox.moe/kug4fb.mp4";
 
       return message.reply({
-        body: " JIBON ER POLA💫TOKAI ALIF💋🎬",
+        body: " ps maruf gaming 💋🎬",
         attachment: await global.utils.getStreamFromURL(video)
       });
     }
