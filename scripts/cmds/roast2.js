@@ -1,6 +1,6 @@
 module.exports = {
     config: {
-        name: "roast2.js",
+        name: "maruf tor abbu",
         version: "1.1",
         author: "BADHON",
         role: 0,
