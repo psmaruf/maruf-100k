@@ -19,7 +19,8 @@ module.exports = {
         "https://files.catbox.moe/3s8cio.mp4",
         "https://files.catbox.moe/7bk7wm.mp4",
         "https://files.catbox.moe/855ye4.mp4",
-        "https://files.catbox.moe/9vd8ay.mp4"
+        "https://files.catbox.moe/9vd8ay.mp4",
+        "https://files.catbox.moe/uarl9o.mp4"
       ];
       
  
