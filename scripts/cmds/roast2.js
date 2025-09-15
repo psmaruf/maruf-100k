@@ -1,6 +1,6 @@
 module.exports = {
     config: {
-        name: "maruf tor abbu",
+        name: "maruf👍tor🥱abbu",
         version: "1.1",
         author: "BADHON",
         role: 0,
