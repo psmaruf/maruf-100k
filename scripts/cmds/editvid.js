@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    name: "edit",
+    name: "myedit",
     version: "1.0",
     author: "Badhon",
     category: "cuties",
