@@ -1,12 +1,12 @@
 module.exports = {
   config: {
-    name: "maruf edit",
+    name: "marufedit",
     version: "1.0",
     author: "Badhon",
     category: "cuties",
     role: 0,
     usePrefix: true,
-    description: "Send a random edit video",
+    description: "Send a random dance video",
     usage: "Just type {p}edit and the bot will send a random edit video",
     cooldown: 2,
   },
@@ -14,12 +14,12 @@ module.exports = {
   onStart: async function({ message }) {
     try {
       const videos = [
-        "https://files.catbox.moe/h8ek6g.mp4",
-        "https://files.catbox.moe/zlguk3.mp4",
+        "https://files.catbox.moe/bs5obz.mp4",
         "https://files.catbox.moe/h4fdhe.mp4",
         "",
         "",
-        "https://files.catbox.moe/bs5obz.mp4"
+        "https://files.catbox.moe/h4fdhe.mp4",
+        "https://files.catbox.moe/h8ek6g.mp4"
       ];
       
  
@@ -28,13 +28,13 @@ module.exports = {
       
    
       message.reply({
-        body: "💃 COME BABY'S 🥵!",
+        body: "💃 ps maruf gaming  🥵!",
         attachment: await global.utils.getStreamFromURL(randomVideo)
       });
       
     } catch (error) {
-      console.error("Error in dance command:", error);
-      message.reply("❌ An error occurred while sending the dance video. Please try again later.");
+      console.error("Error in edit command:", error);
+      message.reply("❌ An error occurred while sending the edit video. Please try again later.");
     }
   }
 };
