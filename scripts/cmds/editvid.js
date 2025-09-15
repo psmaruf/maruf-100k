@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    name: "marufedit",
+    name: "edit",
     version: "1.0",
     author: "Badhon",
     category: "cuties",
@@ -16,8 +16,8 @@ module.exports = {
       const videos = [
         "https://files.catbox.moe/bs5obz.mp4",
         "https://files.catbox.moe/h4fdhe.mp4",
-        "",
-        "",
+        
+        
         "https://files.catbox.moe/h4fdhe.mp4",
         "https://files.catbox.moe/h8ek6g.mp4"
       ];
