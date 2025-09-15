@@ -49,7 +49,7 @@ module.exports = {
                 }
                 else if (annoyedEmojis.some(emoji => msg.includes(emoji))) {
                     return message.reply({
-                        attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/wyoxmq.ogg"),
+                        attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/otprbk.ogg"),
                         body: "🙄"
                     });
                 }
