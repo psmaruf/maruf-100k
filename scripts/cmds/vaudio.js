@@ -58,6 +58,8 @@ module.exports = {
                     return message.reply({
                         attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/otprbk.ogg"),
                         body: "🐸"
+                     });
+                }   
             }
         } catch (error) {
             console.error("Error in vaudio command:", error);
