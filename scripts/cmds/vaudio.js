@@ -34,7 +34,7 @@ module.exports = {
                 const laughEmojis = ["😆", "🤣", "😂", "😹"];
                 const sadEmojis = ["🥺", "😭", "😿", "🥲"];
                 const annoyedEmojis = ["🙄", "😒"];
-                const frogEmojis = ["🐸", "🙂"];
+                const Frog SmilingEmojis = ["🐸", "🙂"];
 
                 if (laughEmojis.some(emoji => msg.includes(emoji))) {
                     return message.reply({
@@ -54,7 +54,7 @@ module.exports = {
                         body: "🙄"
                     });
                 }
-                else if (frogEmojis.some(emoji => msg.includes(emoji))) {
+                else if (Frog SmilingEmojis.some(emoji => msg.includes(emoji))) {
                     return message.reply({
                         attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/otprbk.ogg"),
                         body: "🐸"
