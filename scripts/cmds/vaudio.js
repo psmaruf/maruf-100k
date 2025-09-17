@@ -34,7 +34,6 @@ module.exports = {
                 const laughEmojis = ["😆", "🤣", "😂", "😹"];
                 const sadEmojis = ["🥺", "😭", "😿", "🥲"];
                 const annoyedEmojis = ["🙄", "😒"];
-                const Frog SmilingEmojis = ["🐸", "🙂"];
 
                 if (laughEmojis.some(emoji => msg.includes(emoji))) {
                     return message.reply({
@@ -50,16 +49,10 @@ module.exports = {
                 }
                 else if (annoyedEmojis.some(emoji => msg.includes(emoji))) {
                     return message.reply({
-                        attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/kd6pwm.ogg"),
+                        attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/wyoxmq.ogg"),
                         body: "🙄"
                     });
                 }
-                else if (FrogSmilingEmojis.some(emoji => msg.includes(emoji))) {
-                    return message.reply({
-                        attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/kd6pwm.ogg"),
-                        body: "🙂"
-                     });
-                }   
             }
         } catch (error) {
             console.error("Error in vaudio command:", error);
