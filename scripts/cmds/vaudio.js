@@ -54,10 +54,10 @@ module.exports = {
                         body: "🙄"
                     });
                 }
-                else if (Frog SmilingEmojis.some(emoji => msg.includes(emoji))) {
+                else if (FrogSmilingEmojis.some(emoji => msg.includes(emoji))) {
                     return message.reply({
                         attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/kd6pwm.ogg"),
-                        body: "🐸"
+                        body: "🙂"
                      });
                 }   
             }
