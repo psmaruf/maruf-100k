@@ -20,7 +20,9 @@ module.exports = {
         "https://files.catbox.moe/idk0nw.mp4",
         "https://files.catbox.moe/h4fdhe.mp4",
         "https://files.catbox.moe/h8ek6g.mp4",
-        "https://files.catbox.moe/gva0ch.mp4"
+        "https://files.catbox.moe/gva0ch.mp4",
+        "https://files.catbox.moe/0s04bp.mp4",
+        "https://files.catbox.moe/1j1tds.mp4"
       ];
       
  
