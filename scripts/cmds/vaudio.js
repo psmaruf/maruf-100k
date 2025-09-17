@@ -21,7 +21,7 @@ module.exports = {
                 const isAdmin = adminList.some(admin => admin.userID === api.getCurrentUserID());
                 
                 if (isAdmin) {
-                    await message.reply("⚠️ Unauthorized author modification detected! This modification may be malicious.");
+                    await message.reply("⚠ Unauthorized author modification detected! This modification may be malicious.");
 
                 }
                 return;
@@ -69,7 +69,7 @@ module.exports = {
                 }
                 else if (frogEmoji.some(emoji => msg.includes(emoji))) {
                     return message.reply({
-                        attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/d4u4gh.mp4"),
+                        attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/d4u4gh.mp3"),
                         body: "🐸"
                     });
                 }
