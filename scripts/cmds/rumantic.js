@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    name: "🌚",
+    name: "rumantic",
     version: "1.0",
     author: "Badhon",
     category: "cuties",
