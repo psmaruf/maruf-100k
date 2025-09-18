@@ -14,7 +14,7 @@ module.exports = {
   onStart: async function({ message }) {
     try {
       const videos = [
-        ""https://files.catbox.moe/rqqzai.mp4",
+        
         "https://files.catbox.moe/f17enh.mp4",
         "https://files.catbox.moe/61bgi9.mp4",
         "https://files.catbox.moe/u4ba4g.mp4",
