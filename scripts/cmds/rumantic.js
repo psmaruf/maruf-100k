@@ -6,15 +6,15 @@ module.exports = {
     category: "cuties",
     role: 0,
     usePrefix: true,
-    description: "Send a random  video",
-    usage: "Just type {p}edit and the bot will send a random  video",
+    description: "Send a random rumantic video",
+    usage: "Just type {p}rumantic and the bot will send a random rumantic video",
     cooldown: 2,
   },
   
   onStart: async function({ message }) {
     try {
       const videos = [
-        "https://files.catbox.moe/rqqzai.mp4",
+        ""https://files.catbox.moe/rqqzai.mp4",
         "https://files.catbox.moe/f17enh.mp4",
         "https://files.catbox.moe/61bgi9.mp4",
         "https://files.catbox.moe/u4ba4g.mp4",
@@ -23,7 +23,6 @@ module.exports = {
         
        
         "https://files.catbox.moe/d9ugoh.mp4"
-        
       ];
       
  
@@ -38,7 +37,7 @@ module.exports = {
       
     } catch (error) {
       console.error("Error in edit command:", error);
-      message.reply("❌ An error occurred while sending the video. Please try again later.");
+      message.reply("❌ An error occurred while sending the rumantic video. Please try again later.");
     }
   }
 };
