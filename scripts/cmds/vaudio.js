@@ -63,7 +63,7 @@ module.exports = {
                 }
                 else if (annoyedEmojis.some(emoji => msg.includes(emoji))) {
                     return message.reply({
-                        attachment: await global.utils.getStreamFromURL(""),
+                        attachment: await global.utils.getStreamFromURL("ওই বেট্টা ওই দিকে কি তাকাছ আমার বস মারুফ তো এই দিকে"),
                         body: "🙄"
                     });
                 }
