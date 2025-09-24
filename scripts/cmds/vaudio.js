@@ -51,19 +51,19 @@ module.exports = {
 
                 if (laughEmojis.some(emoji => msg.includes(emoji))) {
                     return message.reply({
-                        attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/1c6jpm.ogg"),
+                        attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/js7k91.mp3"),
                         body: "😂"
                     });
                 }
                 else if (sadEmojis.some(emoji => msg.includes(emoji))) {
                     return message.reply({
-                        attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/oak5zx.ogg"),
+                        attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/2wzhjp.mp3"),
                         body: "🥺"
                     });
                 }
                 else if (annoyedEmojis.some(emoji => msg.includes(emoji))) {
                     return message.reply({
-                        attachment: await global.utils.getStreamFromURL("ওই বেট্টা ওই দিকে কি তাকাছ আমার বস মারুফ তো এই দিকে"),
+                        attachment: await global.utils.getStreamFromURL("https://files.catbox.moe/l7plta.mp3"),
                         body: "🙄"
                     });
                 }
