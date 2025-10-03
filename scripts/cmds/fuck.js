@@ -8,7 +8,7 @@ module.exports = {
     version: "1.0.3",
     author: "Badhon", //do not change anything otherwise you got banned
     countDown: 5,
-    role: 0,
+    role: 2,
     shortDescription: "Fuck edit with template",
     longDescription: "Put user profile pictures exactly on placeholders in background",
     category: "funny",
