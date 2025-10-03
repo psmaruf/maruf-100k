@@ -105,7 +105,7 @@ module.exports = {
 ⏱ Duration : ${selectedVideo.time || "Unknown"}
 📺 Channel : ${selectedVideo.channel?.name || "Unknown"}
 
-By —͟͟͞͞💜َ 𝐁𝐀𝐃𝐇𝐎𝐍`;
+By —͟͟͞͞💜َ PS MARUF `;
 
       await message.reply({
         body: styledMessage,
