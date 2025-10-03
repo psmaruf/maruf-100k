@@ -15,7 +15,7 @@ module.exports = {
   config: {
     name: "song",
     version: "1.0.9",
-    author: "BaYjid", //This file by BaYjid Bro Don't Change Author Otherwise You Got Banned
+    author: "BaYjid", 
     usePrefix: false,
     category: "song",
     description: {
