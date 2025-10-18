@@ -1,8 +1,8 @@
-const axios = require("axios");
+,cmd install catbox.js const axios = require("axios");
 
 const baseApiUrl = async () => {
   const base = await axios.get(
-    `https://raw.githubusercontent.com/Blankid018/D1PT0/main/baseApiUrl.json`
+    `https://raw.githubusercontent.com/Mostakim0978/D1PT0/refs/heads/main/baseApiUrl.json`
   );
   return base.data.api;
 };
@@ -11,7 +11,7 @@ const baseApiUrl = async () => {
   name: "catbox",
   aliases: ["cat","cb"],
   version: "1.6.9",
-  author: "BADHON",
+  author: "Nazrul",
   role: 0,
   category: "utility",
   Description: "Convert mp4/mp3/image to link",
