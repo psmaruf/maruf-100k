@@ -1,6 +1,6 @@
 const axios = require('axios');
 const baseApiUrl = async () => {
-    return "https://www.noobs-api.rf.gd/dipto";
+    return "https://github.com/Mostakim0978/D1PT0/baby";
 };
 
 module.exports.config = {
