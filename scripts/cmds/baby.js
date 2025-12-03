@@ -1,13 +1,13 @@
 const axios = require('axios');
 const baseApiUrl = async () => {
-    return "https://github.com/Mostakim0978/D1PT0/baby";
+    return "https://api.noobs-api.rf.gd";
 };
 
 module.exports.config = {
     name: "bby",
-    aliases: ["baby", "bbe", "bot", "nisan", "babe"],
+    aliases: ["baby", "bbe", "bot", "MARUF", "babe"],
     version: "6.9.0",
-    author: "jibonvai",
+    author: "marufvai",
     countDown: 0,
     role: 0,
     description: "better then all sim simi",
@@ -159,7 +159,7 @@ module.exports.onChat = async ({
 }) => {
     try {
         const body = event.body ? event.body?.toLowerCase() : ""
-        if (body.startsWith("baby") || body.startsWith("bby") || body.startsWith("বেবি") || body.startsWith("bot") || body.startsWith("jibon") || body.startsWith("maruf") || body.startsWith("বট")) {
+        if (body.startsWith("baby") || body.startsWith("bby") || body.startsWith("বেবি") || body.startsWith("bot") || body.startsWith("maruf") || body.startsWith("maruf") || body.startsWith("বট")) {
             const arr = body.replace(/^\S+\s*/, "")
             const randomReplies = ["😘", "𝙃𝙤𝙥 𝙗𝙚𝙙𝙖😾, 𝘽𝙤𝙨𝙨 বল 𝙗𝙤𝙨𝙨😼", "𝙒𝙝𝙖𝙩'𝙨 𝙪𝙥?", "বলো কি বলবা, সবার সামনে বলবা নাকি?🤭🤏", "𝙣𝙖𝙬 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙙𝙖𝙬 https://www.facebook.com/ps.maruf.gaming.1", "আমাকে ডাকলে, আমি কিন্তূ কিস করে দেবো😘", "𝘽𝘼𝘽𝙐 𝙆𝙃𝙐𝘿𝘼 𝙇𝘼𝙂𝙎𝙀🥺"];
             if (!arr) {
