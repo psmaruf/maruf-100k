@@ -5,7 +5,7 @@ cjt baseApiUrl = async () => {
 
 module.exports.config = {     
     name: "bby",     
-    aliases: ["baby", "bbe", "babe", "sam"],     
+    aliases: ["baby", "bbe", "babe", "maruf"],     
     version: "6.9.0",     
     author: "dipto",     
     countDown: 0,     
