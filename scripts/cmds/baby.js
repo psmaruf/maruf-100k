@@ -1,11 +1,11 @@
 const axios = require('axios'); 
-cjt baseApiUrl = async () => {     
+const baseApiUrl = async () => {     
     return "http://noobs-api.top/dipto"; 
 };  
 
 module.exports.config = {     
     name: "bby",     
-    aliases: ["baby", "bbe", "babe", "maruf"],     
+    aliases: ["baby", "bbe", "babe", "sam"],     
     version: "6.9.0",     
     author: "dipto",     
     countDown: 0,     
@@ -149,15 +149,13 @@ module.exports.onReply = async ({ api, event, Reply }) => {
 module.exports.onChat = async ({ api, event, message }) => {     
     try {         
         const body = event.body ? event.body?.toLowerCase() : ""         
-        if (body.startsWith("baby") || body.startsWith("bby") || body.startsWith("bot") || body.startsWith("jan") || body.startsWith("babu") ||
-body.startsWith("maruf") ||
-body.startsWith("janu")) {             
+        if (body.startsWith("baby") || body.startsWith("bby") || body.startsWith("bot") || body.startsWith("jan") || body.startsWith("babu") || body.startsWith("janu")) {             
             const arr = body.replace(/^\S+\s*/, "")             
 
             
             const randomReplies = [
                 "🙄 এই রে, আবার তুই?",
-                "আমার বস মারুফ টে বউ দে 🌚🫶🏻",
+                "🤣 কি খবর রে পাগলা?",
                 "😏 হুমম, ডেকেছিস?",
                 "🤡 মাথা খারাপ নাকি তোর?",
                 "🥴 কি চাটার চাটার করছিস?",
