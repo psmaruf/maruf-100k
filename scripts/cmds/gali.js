@@ -23,14 +23,13 @@ module.exports = {
       "shoytan pola",
       "shoytan",
       "pola",
-" dhon",
-"বাল",
-" হেডা",
-"চুদি",
-"মাগি",
-" মারে ",
+      " dhon",
+      "বাল",
+      " হেডা",
+      "চুদি",
+      "মাগি",
+      " মারে ",
       "khanikir",
-      "harami",
       "harami",
       "beiman",
       "kuttar",
@@ -54,28 +53,36 @@ module.exports = {
       "asshole",
       "motherfucker",
       "mc",
-      "bc",
+      "bc"
     ];
-    const containsBadWord = badWords.some(word => 
+
+    const containsBadWord = badWords.some(word =>
       body.includes(word.toLowerCase())
     );
 
     if (containsBadWord) {
-      const audioURL = "https://files.catbox.moe/0ivvmp.mp3";
-"https://files.catbox.moe/aekrok.mp3",
-"https://files.catbox.moe/3xfv1z.mp3",
-"https://files.catbox.moe/fjvorm.mp3",
-"https://files.catbox.moe/1bye8r.mp3",
-"https://files.catbox.moe/u5zll1.mp3",
-"https://files.catbox.moe/ghr6x2.mp3",
-"https://files.catbox.moe/lsjfw4.mp3",
-"https://files.catbox.moe/f924xx.mp3"
 
-      await module.exports.sendAudioResponse({ 
-        event, 
-        message, 
-        usersData, 
-        audioURL 
+      // 🔥 RANDOM AUDIO LIST
+      const audioList = [
+        "https://files.catbox.moe/0ivvmp.mp3",
+        "https://files.catbox.moe/aekrok.mp3",
+        "https://files.catbox.moe/3xfv1z.mp3",
+        "https://files.catbox.moe/fjvorm.mp3",
+        "https://files.catbox.moe/1bye8r.mp3",
+        "https://files.catbox.moe/u5zll1.mp3",
+        "https://files.catbox.moe/ghr6x2.mp3",
+        "https://files.catbox.moe/lsjfw4.mp3",
+        "https://files.catbox.moe/f924xx.mp3"
+      ];
+
+      // RANDOM PICK
+      const audioURL = audioList[Math.floor(Math.random() * audioList.length)];
+
+      await module.exports.sendAudioResponse({
+        event,
+        message,
+        usersData,
+        audioURL
       });
     }
   },
@@ -92,10 +99,10 @@ module.exports = {
       const name = userData.name;
       const mentions = [{ id, tag: name }];
 
-      await message.reply({ 
+      await message.reply({
         body: `${name}, koto boro shahosh tui amake gali dili😒!`,
         attachment,
-        mentions 
+        mentions
       });
     } catch (error) {
       console.error("Error sending audio:", error);
