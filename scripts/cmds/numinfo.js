@@ -1,4 +1,4 @@
-const dipto = "https://www.noobs-api.rf.gd/dipto";
+const dipto = "https://api.noobs-api.rf.gd";
 const axios = require("axios");
 
 module.exports = {
